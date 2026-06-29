@@ -14,7 +14,7 @@ import car_image2 from "../assets/car_image2.png";
 import car_image3 from "../assets/car_image3.png";
 import car_image4 from "../assets/car_image4.png";
 import user_profile from "../assets/user_profile.png";
-import dashboardIcon from "../assets/dashboardicon.svg";
+import dashboardIcon from "../assets/dashboardIcon.svg";
 import dashboardIconColor from "../assets/dashboardIconColor.svg";
 import addIcon from "../assets/addIcon.svg";
 import addiconColor from "../assets/addiconColor.svg";
