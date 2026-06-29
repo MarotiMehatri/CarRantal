@@ -8,7 +8,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
-import { nanoid } from "@reduxjs/toolkit";
+import { nanoid } from "nanoid";
 const CarDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -92,7 +92,8 @@ const CarDetails = () => {
                   key={text}
                   className="flex flex-col items-center bg-light p-4 rounded-lg"
                 >
-                  <img src={icon} alt="" className="h-5 mb-2" /> {text}
+                  <div className="text-2xl text-primary mb-2">{icon}</div>
+                  <p>{text}</p>
                 </div>
               ))}
             </div>
