@@ -20,6 +20,10 @@ const AddCar = () => {
     description: "",
   });
 
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+
   const onSubmitHandler = async (e) => {
     e.preventDefault();
   };
@@ -43,15 +47,17 @@ const AddCar = () => {
               alt=""
               className="h-14 rounded cursor-pointer"
             />
-            <input
+            {/* <input
               type="file"
               id="car_image"
               accept="image/*"
               hidden
               onChange={(e) => setImage(e.target.files[0])}
-            />
+            /> */}
+            <input type="file" accept="image/*" onChange={handleImageChange} />
+            {image && <p>Selected file: {image.name}</p>}
           </label>
-          <p className="text-sm text-gray-500">Upload a picture of your car</p>
+          {/* <p className="text-sm text-gray-500">Upload a picture of your car</p> */}
         </div>
 
         {/* Car Brand & Model */}

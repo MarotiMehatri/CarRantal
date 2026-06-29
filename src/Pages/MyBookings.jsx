@@ -3,7 +3,7 @@ import { dummyBookingData } from "../assets/assets";
 import Title from "../Components/Title";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
-const MyBookings = () => {
+function MyBookings() {
   const [bookings, setBookings] = useState([]);
   const currency = import.meta.env.VITE_CURRENCY;
 
@@ -13,6 +13,7 @@ const MyBookings = () => {
   useEffect(() => {
     fatchMyBookings();
   }, []);
+
   return (
     <div className="px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-48 mt-16 text-sm max-w-7xl">
       <Title
@@ -20,6 +21,7 @@ const MyBookings = () => {
         subTitle="View and manage your all car bookings"
         align="left"
       />
+      {bookings.length === 0 && <p>No bookings found</p>}
       <div>
         {bookings.map((booking, index) => (
           <div
@@ -30,7 +32,7 @@ const MyBookings = () => {
               <div className="rounded-md overflow-hidden mb-3">
                 <img
                   src={booking.car.image}
-                  alt=""
+                  alt={booking.car.name}
                   className="w-full h-auto aspect-video object-cover"
                 />
               </div>
@@ -98,6 +100,7 @@ const MyBookings = () => {
       </div>
     </div>
   );
-};
+}
 
 export default MyBookings;
+

@@ -26,6 +26,16 @@ import cautioniconColor from "../assets/cautioniconColor.svg";
 import upload_Icon from "../assets/upload_icon.svg";
 import eye_Icon from "../assets/eye_icon.svg";
 import eye_close_Icon from "../assets/eye_close_icon.svg";
+import Land_Rover_Defender1 from "../assets/Land_Rover_Defender1.jpeg";
+import Range_Rover from "../assets/Range_Rover.jpg";
+import Range from "../assets/Range.jpeg";
+import SUV_TATA_HARRIER from "../assets/SUV'S_TATA_HARRIER.jpeg";
+import Suzuki from "../assets/Suzuki_Maruti-Ertiga.jpeg";
+import Tata_Punch1 from "../assets/Tata_Punch1.jpeg";
+import Tata_Harrier_dark from "../assets/Tata_Harrier_dark.jpeg";
+import Tata_harrier from "../assets/Tata_harrier.jpeg";
+import Login_Page from "../assets/Login_page.jpg";
+import Login_Video from "../assets/Login_Video.mp4";
 export const cityList = [
   "Dilhi",
   "Mumbai",
@@ -68,6 +78,16 @@ export const assets = {
   upload_Icon,
   eye_Icon,
   eye_close_Icon,
+  Land_Rover_Defender1,
+  Range_Rover,
+  Range,
+  SUV_TATA_HARRIER,
+  Suzuki,
+  Tata_Harrier_dark,
+  Tata_harrier,
+  Tata_Punch1,
+  Login_Page,
+  Login_Video,
 };
 
 export const car = {};
@@ -114,6 +134,150 @@ export const dummyUserData = {
 };
 
 export const dummyCarData = [
+  {
+    _id: "105",
+    owner: "105",
+    brand: "Tata Punch",
+    model: " Plus",
+    image: Tata_Punch1,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "104",
+    owner: "104",
+    brand: "Tata Harrier Dark",
+    model: " Pure X",
+    image: Tata_Harrier_dark,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "103",
+    owner: "103",
+    brand: "Tata Harrier",
+    model: " SUV",
+    image: Tata_harrier,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "102",
+    owner: "102",
+    brand: "Maruti Suzuki",
+    model: " Ertiga",
+    image: Suzuki,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "101",
+    owner: "101",
+    brand: "TATA HARRIER",
+    model: " Fearless X Plus",
+    image: SUV_TATA_HARRIER,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "64a7f4e2f1c223e5d6a8c22w3",
+    owner: "64a7f4e22c2b9e5d6a8c2w23",
+    brand: "Range Rover",
+    model: " Autobiography",
+    image: Range,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "64a7f4e2f1c2b925d6a8c22w3",
+    owner: "64a7f4e2f1c2139e5d6a8c2w23",
+    brand: "Range Rover",
+    model: " SV",
+    image: Range_Rover,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
+  {
+    _id: "64a7f4e2f1c2b9e5d6a8c22w3",
+    owner: "64a7f4e2f1c2b9e5d6a8c2w23",
+    brand: "Land Rover Defender",
+    model: " X",
+    image: Land_Rover_Defender1,
+    year: 2025,
+    category: "SUV",
+    seating_capacity: 4,
+    fuel_Type: "Diesel",
+    transmission: "Automatic",
+    rent_per_day: 10000,
+    location: "pune",
+    description:
+      "The Land Rover Defender is an iconic off-road SUV that combines rugged capability with modern luxury. Renowned for its exceptional off-road performance, the Defender features advanced terrain response systems, a durable chassis, and a spacious, high-end interior, making it perfect for both adventurous expeditions and comfortable city driving.",
+    isAvailable: true,
+    createdAt: "2025-12-06T13:45:05.012Z",
+  },
   {
     _id: "64a7f4e2f1c2b9e5d6a8c2233",
     owner: "64a7f4e2f1c2b9e5d6a8c12w23",
@@ -176,7 +340,7 @@ export const dummyCarData = [
     image: car_image4,
     year: 2025,
     category: "SUV",
-    seating_capacity: 2,
+    seating_capacity: 4,
     fuel_Type: "Diesel",
     transmission: "Automatic",
     rent_per_day: 8000,

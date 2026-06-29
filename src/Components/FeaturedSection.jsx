@@ -3,7 +3,7 @@ import Title from "./Title";
 
 import { FaLocationArrow } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import CarCard from "./CarCard";
+import CarCard from "./cars/CarCard";
 import { dummyCarData } from "../assets/assets";
 const FeaturedSection = () => {
   const navigate = useNavigate();

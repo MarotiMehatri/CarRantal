@@ -12,7 +12,7 @@ import Dashboard from "./Pages/owner/Dashboard.jsx";
 import AddCar from "./Pages/owner/AddCar.jsx";
 import ManageCars from "./Pages/owner/ManageCars.jsx";
 import MangeBookings from "./Pages/owner/MangeBookings.jsx";
-import Login from "./Components/Login.jsx";
+import Login from "./Components/Login/Login.jsx";
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const isOwnerPath = useLocation().pathname.startsWith("/owner");

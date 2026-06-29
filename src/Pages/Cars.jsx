@@ -4,7 +4,7 @@ import Title from "../Components/Title";
 import { CiFilter } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import { dummyCarData } from "../assets/assets";
-import CarCard from "../Components/CarCard";
+import CarCard from "../Components/cars/CarCard";
 const Cars = () => {
   const [input, setInput] = useState("");
 

@@ -8,11 +8,41 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
+import { nanoid } from "@reduxjs/toolkit";
 const CarDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [car, setCar] = useState(null);
   const currency = import.meta.env.VITE_CURRENCY;
+
+  const [pickupData, setPickupData] = useState("");
+  const [returnData, setReturnData] = useState("");
+
+  const handleBooking = () => {
+    if (!pickupData || !returnData) {
+      alert("Please select pickup and return data");
+      return;
+    }
+
+    const bookingData = {
+      bookingId: nanoid(),
+      carName: car.name,
+      pricePerDay: car.pricePerDay,
+      pickupData,
+      returnData,
+    };
+
+    // Get existing booking
+    const oldBookings = JSON.parse(localStorage.getItem("boolings")) || [];
+
+    //save new booking
+    localStorage.setItem(
+      "boolings",
+      JSON.stringify([...oldBookings, bookingData]),
+    );
+    alert("Booking Successfull");
+    navigate("/my-bookings");
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -112,6 +142,7 @@ const CarDetails = () => {
               required
               id="pickup-date"
               min={new Date().toISOString().split("T")[0]}
+              onChange={(e) => setPickupData(e.target.value)}
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -121,9 +152,13 @@ const CarDetails = () => {
               className="border border-borderColor px-3 py-2 rounded-lg "
               required
               id="riturn-date"
+              onChange={(e) => setReturnData(e.target.value)}
             />
           </div>
-          <button className="w-full bg-primary hover:bg-primary-dull transition-all py-3 font-medium text-white rounded-xl cursor-pointer">
+          <button
+            onClick={handleBooking}
+            className="w-full bg-primary hover:bg-primary-dull transition-all py-3 font-medium text-white rounded-xl cursor-pointer"
+          >
             Book Now
           </button>
           <p className="text-center text-sm">
